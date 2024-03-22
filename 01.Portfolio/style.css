@@ -48,9 +48,11 @@ h5{
 p{
     font-size: 16px;
     line-height: 140%;
+    color: var(--color-dark-variant);
 }
 .heading-p{
     padding-top: 9rem;
+    text-align: center;
 }
 a{
     font-size: 24px;
@@ -109,7 +111,8 @@ img{
 
 /* Start Navbar */
 nav{
-    height: 5rem;
+    height: 4rem;
+    background-color: var(--color-white);
     position: fixed;
     z-index: 1;
     top: 0;
@@ -169,3 +172,36 @@ header{
     margin: 1rem auto;
 }
 /* End Header */
+
+/* Start About Section */
+.about-container{
+    display: grid;
+    grid-template-columns: 38% auto;
+    gap: 4rem;
+    align-items: center;
+}
+.about-left{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.basic-edu{
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+.edu-box{
+    padding: 24px;
+    text-align: center;
+    border: 1px solid var(--color-dark-variant);
+    border-radius: 10px;
+    width: 100%;
+}
+.edu-box img{
+    margin: auto;
+}
+/* End About Section */
+
+
+
+/* Start About Section */
+/* End About Section */
