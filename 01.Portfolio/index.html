@@ -1,119 +1,57 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <title>Personal Portfolio</title>
-    <!-- Css Style Link -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Css Style Link -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12-Column Grid</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Start Navbar -->
-    <nav>
-        <div class="container nav-container">
-            <a href="" class="logo">Joodi</a>
-            <ul class="nav-links">
-                <li><a href="#About">About</a></li>
-                <li><a href="#Experience">Experience</a></li>
-                <li><a href="#Project">Project</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
+
+  <header class="">
+    <div class="head">
+      <img src="./img/profile.jpg" class="profileImg" alt="">
+      <h1>Milad Joodi</h1>
+      <p>A Front End Web Developer</p>
+      <button>Download CV</button>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+      <li class="dropdownLink"><a href="#">Contact <span>></span></a>
+        <div class="dropdown">
+          <img class="social-icon"
+            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
+            alt="">
+          <img class="social-icon" src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/github-512.png" alt="">
         </div>
-    </nav>
-    <!-- End Navbar -->
+      </li>
 
-    <!-- Start Header Section -->
-    <header>
-        <div class="container header-container">
-            <div class="header-left">
-                <img src="./img/profile-pic.jpg" alt="">
-            </div>
-            <div class="header-right">
-                <p><b>Hello, I'm</b></p>
-                <h1>Joodi</h1>
-                <h2>Front End Developer</h2>
-                <div class="header-action-aria">
-                    <a href="" class="btn" download="./img/cv.pdf">Download CV</a>
-                    <a href="#Contact" class="btn btn-dark">Contact info</a>
-                </div>
-                <div class="header-social">
-                    <a href=""><img src="./img/linkedin.png" class="icon1"></a>
-                    <a href=""><img src="./img/Github.png" class="icon1"></a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- End Header Section -->
+    </ul>
+  </nav>
 
-    <!-- Start About Section -->
-    <section id="About">
-        <p class="heading-p">Get To Know More</p>
-        <h1 class="heading">About Me</h1>
-        <div class="container about-container">
-            <div class="about-left">
-                <img src="./img/about-pic.jpg" alt="">
-            </div>
-            <div class="about-right">
-                <div class="basic-edu">
+  <p class="desc">
+    I am writing to express my strong interest in the Entry Level Frontend Developer position at Codesoft. <br /> As a
+    recent
+    graduate with a passion for web development and a solid foundation in frontend technologies, I am excited about the
+    opportunity to contribute to your team and help create immersive digital experiences.
+  </p>
 
-                    <div class="edu-box">
-                        <img src="./img/experince.jpg" class="icon1">
-                        <h4>Experience</h4>
-                        <p>
-                            2+ years <br>
-                            Front End Development
-                        </p>
-                    </div>
-
-                    <div class="edu-box">
-                        <img src="./img/edu.jpg" class="icon1">
-                        <h4>Education</h4>
-                        <p>
-                            Bachelors Degree<br>
-                            M.Sc. Masters Degree
-                        </p>
-                    </div>
-
-                </div>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quaerat error tempore maxime labore
-                    iure officiis quae vel odio dolorem. Repellat optio soluta cumque inventore vitae perspiciatis fuga!
-                    Nemo qui obcaecati asperiores at! At natus, maxime corporis nisi expedita dolor?</p>
-
-            </div>
-        </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- End About Section -->
-
-    <!-- Start Experince Section -->
-    <section id="Experience">
-        <p class="heading-p">Explore My</p>
-        <h1 class="heading">Experience</h1>
-        <div class="container experience-container">
-            <div class="experience-box">
-                <h2>Front End Development</h2>
-                <div class="experience">
-                    <div class="ex-div">
-                        <img src="./img//about-pic.jpg" alt="icon1">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Experince Section -->
-
+  <div class="skills">
+    <h2 class="section-title"><span>Services</span></h2>
+    <div class="skill-icons">
+      <img src="https://camo.githubusercontent.com/fad3fde1b635a126926ac8792c151845e401013a368381d47ac0b92fe634d3e6/68747470733a2f2f63646e2e69636f6e73636f75742e636f6d2f69636f6e2f667265652f706e672d3235362f667265652d747970657363726970742d333532313737342d323934353237322e706e673f663d77656270" alt="">
+      <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="">
+      <img src="https://camo.githubusercontent.com/d764e0d1b0bb6fc6e65157b3c98b9e203a13a17390309fad633406c3324dbfb2/68747470733a2f2f72656163746e61746976652e6465762f696d672f6865616465725f6c6f676f2e737667" alt="">
+      <img src="https://camo.githubusercontent.com/0568e2de313626b2bd9b96f326941b012d45e9a4db1a23aa78bd8036207e57f8/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f7461696c77696e646373732f7461696c77696e646373732d69636f6e2e737667" alt="">
+    </div>
+  </div>
 
 </body>
 
