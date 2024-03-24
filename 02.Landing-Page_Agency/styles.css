@@ -172,73 +172,87 @@ header {
     }
 }
 
-
-@media screen and (max-width: 1200px){
-    .hero-wrapper{
-        padding: 0px 10px;
+/* Start Services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     }
-    .hero{
-        display: flex;
-        flex-direction: column;
-        gap: 55px;
-        align-items: center;
-        justify-content: space-between;
 
-        .hero-right{
-            display: none;
-        }
-        .hero-left{
-            gap: 25px;
-        }
-    }
-    .hero-wrapper {
-        background-image: none;
-       
-}
 
-@media screen and (max-width: 1000px) {
-    .header {
-        button {
-            display: none;
-            position: relative;
+/* End Services */
+
+
+
+/*  */
+    @media screen and (max-width: 1200px) {
+        .hero-wrapper {
+            padding: 0px 10px;
         }
 
-        .logo {
-            div {
+        .hero {
+            display: flex;
+            flex-direction: column;
+            gap: 55px;
+            align-items: center;
+            justify-content: space-between;
+
+            .hero-right {
                 display: none;
             }
-        }
 
-        ul {
-            flex-direction: column;
-            /* background-color: red; */
-            width: 50%;
-            position: absolute;
-            right: -420px;
-            display: none;
-            padding: 25px 10px;
-            text-align: center;
-            top: 70px;
-            background-color: rgba(0, 0, 0, 0.2);
-            /* opacity: 0.3; */
-            border-radius: 10px;
-            font-size: 17px;
-
-
-            a {
-                color: #000000;
+            .hero-left {
+                gap: 25px;
             }
         }
 
-        .hamburger {
-            display: block;
+        .hero-wrapper {
+            background-image: none;
+
         }
 
-    }
+        @media screen and (max-width: 1000px) {
+            .header {
+                button {
+                    display: none;
+                    position: relative;
+                }
 
-    #logo-82 {
-        width: 60;
-        height: 40px;
+                .logo {
+                    div {
+                        display: none;
+                    }
+                }
+
+                ul {
+                    flex-direction: column;
+                    /* background-color: red; */
+                    width: 50%;
+                    position: absolute;
+                    right: -420px;
+                    display: none;
+                    padding: 25px 10px;
+                    text-align: center;
+                    top: 70px;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    /* opacity: 0.3; */
+                    border-radius: 10px;
+                    font-size: 17px;
+
+
+                    a {
+                        color: #000000;
+                    }
+                }
+
+                .hamburger {
+                    display: block;
+                }
+
+            }
+
+            #logo-82 {
+                width: 60;
+                height: 40px;
+            }
+        }
     }
-}
-}
