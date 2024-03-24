@@ -26,7 +26,6 @@ ul {
 }
 
 /* Header */
-header {}
 
 .head {
     background: #f4f4f4 url(./img/bg_head.jpg) top center;
@@ -36,7 +35,7 @@ header {}
     background-repeat: no-repeat;
     padding: 15px;
     grid-column: 6;
-    padding: 90px 0;
+    padding: 20px 0;
     text-align: center;
     line-height: 1rem;
     border-bottom: 1px solid #ddd;
@@ -274,6 +273,7 @@ nav {
         gap: 5px;
         justify-content: center;
         transition: all 0.2s;
+        border-radius: 10px;
 
         &:hover {
             background-color: #e4e4e4;
@@ -298,32 +298,142 @@ nav {
     padding: 20px 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    p{
+    p {
         color: #3a3a3a;
         padding: 10px 0;
     }
-    
-    a{
+
+    a {
         border: none;
         color: #5e5e5e;
         padding: 5px 10px;
-        transition:  all 0.2s;
+        transition: all 0.2s;
         border-radius: 5px;
         cursor: pointer;
         background-color: #e7e7e7;
 
-        &:hover{
+        &:hover {
             background-color: #ddd;
         }
     }
 
 
-    img{
+    img {
         width: 100%;
     }
 }
 
+
+/* Contact */
+.contact {
+    gap: 0 30px;
+
+    .contact-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .contact-inputs {
+                display: flex;
+                gap: 20px;
+            }
+
+            button {
+                outline: none;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 10px;
+                background-color: unset;
+                border: 1px solid #ddd;
+                cursor: pointer;
+                transition: all 0.2s;
+                font-size: 14px;
+                font-family: 'Poppins';
+
+
+                &:hover {
+                    background-color: #ddd;
+                }
+            }
+        }
+
+        input {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            font-family: 'Poppins';
+            outline: none;
+            background-color: unset;
+        }
+
+        textarea {
+            border-radius: 10px;
+            outline: none;
+            background-color: unset;
+            border: 1px solid #ddd;
+            padding: 15px;
+            font-family: 'poppins';
+            letter-spacing: 1.5px;
+            resize: none;
+        }
+    }
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+
+    .social {
+        height: 50px;
+    }
+
+    img {
+        width: 50px;
+        filter: grayscale();
+        opacity: 0.5;
+        margin: 0 15px;
+        cursor: pointer;
+        transition: all 0.4s;
+
+        &:hover{
+        filter: none;
+        }
+    }
+
+    p{
+        font-size: 14px;
+        margin: 50px 0;
+        opacity: 0.5;
+        color: #999;
+
+        a{
+        color: #999;
+        transition: all 0.3s;
+
+
+            &:hover{
+                color: #3a3a3a;
+            }
+        }
+    }
+
+}
 
 
 
