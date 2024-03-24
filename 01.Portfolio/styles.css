@@ -4,11 +4,15 @@ body {
     margin: 0;
     font-family: "Poppins";
     background: #f5f5f5;
-    height: 1000px;
+    height: 2500px;
 }
 
 a {
     text-decoration: none;
+}
+
+button {
+    font-family: "Poppins";
 }
 
 ul {
@@ -22,9 +26,7 @@ ul {
 }
 
 /* Header */
-header {
-    background-color: red;
-}
+header {}
 
 .head {
     background: #f4f4f4 url(./img/bg_head.jpg) top center;
@@ -116,24 +118,19 @@ nav {
         .dropdown {
             /* background-color: #fff; */
             border-radius: 10px;
-            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
             width: max-content;
-            padding: 10px;
             margin-top: 10px;
             margin-left: 10px;
-            display: none;
+            visibility: hidden;
             position: absolute;
-            z-index: 2;
-            background: #fff;
-            min-width: 100px;
+            padding: 0 15px;
+            left: 10px;
+            bottom: -14px;
+            /* z-index: 2; */
             text-align: center;
-
-            .social-icon {
-                width: 20px;
-                height: 20px;
-                margin: 0 10px;
-                cursor: pointer;
-            }
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #ddd;
         }
     }
 
@@ -142,8 +139,15 @@ nav {
         display: inline-block;
 
         &:hover {
+            span {
+                transform: rotate(0);
+
+            }
+
             .dropdown {
-                display: block;
+                visibility: visible;
+                left: 100px;
+
 
             }
         }
@@ -151,7 +155,10 @@ nav {
         span {
             display: inline-block;
             transform: rotate(90deg);
+            transition: all 0.2s;
+
         }
+
     }
 }
 
@@ -165,14 +172,45 @@ nav {
     margin: 50px auto;
 }
 
-.skills{
+.section-title {
     text-align: center;
+
+    span {
+        display: inline-block;
+    }
+
+    &::before {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        width: 25rem;
+        height: 2px;
+        margin: 0 1rem;
+        transform: translateY(-0.7rem);
+    }
+
+    &::after {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        width: 25rem;
+        height: 2px;
+        margin: 0 1rem;
+        transform: translateY(-0.7rem);
+    }
 }
 
 .section-title {
     text-align: center;
     font-size: 2.25rem;
     font-weight: 200;
+}
+
+/* Skills */
+.skills {
+    padding: 40px 0;
 }
 
 .skill-icons {
@@ -183,12 +221,13 @@ nav {
     max-width: 500px;
     padding: 20px 0;
     margin: 0 auto;
-    img{
-       &:nth-child(4){
-        width: 50%;
-    } 
+
+    img {
+        &:nth-child(4) {
+            width: 50%;
+        }
     }
-    
+
 
     img {
         max-width: 20%;
@@ -197,6 +236,106 @@ nav {
         opacity: 0.5;
     }
 }
+
+
+/* Services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 30px;
+}
+
+.section-title {
+    grid-column: span 3;
+}
+
+.services-item {
+    max-height: 400px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+        color: #3a3a3a;
+    }
+
+    button {
+        padding: 10px 25px;
+        width: 100%;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: #e4e4e4;
+
+        }
+    }
+}
+
+.magnify {
+    width: 15px;
+    height: 15px;
+}
+
+/* Recent */
+.recent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 30px;
+}
+
+.recent-item {
+    padding: 20px 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    p{
+        color: #3a3a3a;
+        padding: 10px 0;
+    }
+    
+    a{
+        border: none;
+        color: #5e5e5e;
+        padding: 5px 10px;
+        transition:  all 0.2s;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #e7e7e7;
+
+        &:hover{
+            background-color: #ddd;
+        }
+    }
+
+
+    img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
 
 
 @media screen and (max-width: 960px) {
