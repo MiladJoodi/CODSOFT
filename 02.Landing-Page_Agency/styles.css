@@ -81,6 +81,7 @@ header {
         letter-spacing: 1px;
         border: none;
         border-radius: 10px;
+        cursor: pointer;
     }
 }
 
@@ -179,10 +180,10 @@ header {
 
 .services {
     display: grid;
-    gap: 50px;
+    gap: 15px;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
-    padding: 0 150px;
+    padding: 50px 150px;
 }
 
 .services-title {
@@ -205,6 +206,7 @@ header {
     grid-column: span 4;
     font-size: 3rem;
     font-weight: 400;
+    margin: 15px;
 }
 
 .card {
@@ -252,9 +254,56 @@ header {
 
 
 }
-
-
 /* End Services */
+
+/* Start Project */
+.projects{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.project-cats{
+    display: flex;
+    gap: 35px;
+    font-size: 18px;
+    padding: 15px 0;
+
+    .cat-selected{
+        border: 1px solid #ddd;
+
+    }
+
+    a{
+        padding: 10px 15px;
+        font-weight: 400;
+        color: hsl(225, 11%, 59%);
+        border-radius: 10px;
+        transition: all 0.4s;
+        border: 1px solid transparent;
+        &:hover{
+            border-color:#ddd;
+        }
+    }
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 180px;
+    gap: 25px;
+    
+    img{
+        width: 100%;
+        border-radius: 10px;
+
+    }
+    img:nth-child(1){
+        grid-column: span 2;
+    }
+}
+
+/* End Project */
 
 
 
