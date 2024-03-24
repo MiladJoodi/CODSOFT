@@ -28,7 +28,10 @@ ul {
 /* Header */
 
 .head {
-    background: #f4f4f4 url(./img/bg_head.jpg) top center;
+    /* background: #f4f4f4 url(./img/bg_head.jpg) top center; */
+    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);    
+    
+
     background-position: center 0;
     background-size: cover;
     background-attachment: fixed;
@@ -232,7 +235,13 @@ nav {
         max-width: 20%;
         margin: 0 10px;
         filter: grayscale();
+        transition: all 0.4s;
         opacity: 0.5;
+
+        &:hover{
+        filter: none;
+
+        }
     }
 }
 
