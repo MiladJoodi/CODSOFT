@@ -17,7 +17,15 @@
       height="40"
     />
     </a>
-  
+    
+  <a href="https://www.javascript.com/">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/946px-Javascript_badge.svg.png"
+      width="40"
+      height="40"
+    />
+    </a>
+    
 <kbd>![](https://s30.picofile.com/file/8474159784/caa.JPG)</kbd>
 
 
